@@ -6,10 +6,31 @@
 <title>About Pug Guide | Pug Guide</title>
 <link rel="canonical" href="https://pugs-care.github.io/about.html">
 <meta name="description" content="Who runs Pug Guide and how its guides are researched and checked.">
+<meta name="robots" content="index, follow">
 <style>
-  body { font-family: 'Roboto', 'Segoe UI', sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; color: #333; line-height: 1.7; }
-  h1 { color: #713f12; }
-  a { color: #713f12; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Roboto', 'Segoe UI', sans-serif; background: #f6f6f7; color: #1f2937; line-height: 1.75; }
+  a { color: #713f12; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .topbar { background: #713f12; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; }
+  .breadcrumb { background: #fff; border-bottom: 1px solid #e5e7eb; }
+  .breadcrumb-inner { max-width: 1120px; margin: 0 auto; padding: 10px 22px 0; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .breadcrumb a { color: #6b7280; }
+  .breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+  .wrap { max-width: 1120px; margin: 28px auto; padding: 0 22px 40px; }
+  .panel { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  h1 { color: #5a320e; font-size: 2rem; margin-bottom: 10px; }
+  h2 { color: #5a320e; font-size: 1.3rem; margin: 24px 0 10px; }
+  p, li { color: #4b5563; }
+  ul { padding-left: 20px; margin: 12px 0; }
+  .intro { font-size: 1rem; margin-bottom: 18px; }
+  .footer { background: #5a320e; color: rgba(255,255,255,0.75); margin-top: 32px; }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 18px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .sc-footer p{color:rgba(255,255,255,0.75)}
 </style>
 <style id="site-chrome">
 :where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
@@ -89,15 +110,19 @@
         <li><a href="/care.html">Care</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<div class="wrap"><section class="panel">
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner" style="max-width:1120px;"><a href="/">Home</a><span>›</span><span aria-current="page">About Pug Guide</span></div></nav>
+<div class="wrap">
+  <section class="panel">
 <h1>About Pug Guide</h1>
 <p style="margin:0 0 14px">Pugs Care is written by Amy Tran for owners of the breed that snores louder than most people. Breathing, eye care, weight and heat safety will be the first topics here.</p><p style="margin:0 0 14px">Amy is not a veterinarian. Guides will be built from veterinary references and published research, linked in each article, with clear advice on when a pug needs to see a vet.</p><p style="margin:0 0 14px">The site is new, and guides are added one at a time as they are checked.</p><p>How we write and check guides: <a href="/editorial-policy.html">editorial policy</a> · <a href="/disclosure.html">disclosure</a> · <a href="/contact.html">contact</a>.</p>
-</section></div>
+</section>
+</div>
 <footer class="sc-footer">
   <div class="sc-footer-nav">
     <a href="/">Home</a>
@@ -105,6 +130,7 @@
     <a href="/about.html">About</a>
     <a href="/contact.html">Contact</a>
     <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
   </div>
   <p>&copy; 2026 pugs-care.github.io &mdash; Pug Guide. All rights reserved.</p>
 </footer>

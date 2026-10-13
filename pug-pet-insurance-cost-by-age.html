@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://pugs-care.github.io/pug-pet-insurance-cost-by-age.html">
 <style>
-  body { font-family: 'Roboto', 'Segoe UI', sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; color: #333; line-height: 1.7; }
+  body { font-family: 'Roboto', 'Segoe UI', sans-serif; background: #f6f6f7; max-width: 700px; margin: 40px auto; padding: 0 16px; color: #333; line-height: 1.7; }
   h1 { color: #713f12; }
   a { color: #713f12; }
   .pug-article{max-width:780px;margin:24px auto}
@@ -41,6 +41,17 @@
   .pc-err{color:#b91c1c;font-weight:600}
   .pa-faq details{border:1px solid #eadfd2;border-radius:6px;padding:10px 14px;margin:8px 0}
   .pa-faq summary{font-weight:600;cursor:pointer;color:#5a320e}
+  .layout { max-width: 1120px; margin: 28px auto 48px; padding: 0 22px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; }
+  .layout .pug-article { max-width: none; margin: 0; background: #fff; border-radius: 14px; padding: 30px; box-shadow: 0 1px 8px rgba(0,0,0,0.08); }
+  .sidebar { display: grid; gap: 18px; position: sticky; top: 70px; }
+  .sidebar-panel { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 8px rgba(0,0,0,0.08); }
+  .sidebar-panel h3 { margin: 0 0 10px; color: #5a320e; font-size: 1rem; }
+  .sidebar-panel p, .sidebar-panel li { color: #4b5563; font-size: 0.92rem; }
+  .sidebar-panel ul { margin: 0; padding-left: 18px; }
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .sidebar { position: static; } }
   .pa-eeat{border-top:2px solid #eadfd2;margin-top:2em;padding-top:1em;font-size:.92rem;color:#555}
 </style>
 <style id="site-chrome">
@@ -200,12 +211,15 @@
         <li><a href="/care.html">Care</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<div class="wrap"><article class="panel pug-article">
+<div class="layout">
+  <article class="article pug-article">
+<nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Pug Pet Insurance Cost by Age</span></nav>
 <p class="pa-meta">By Amy Tran · Pug Guide · Updated October 12, 2026</p>
 <h1>How Much Does Pet Insurance Cost for a Pug by Age? Premiums From Puppy to Senior</h1>
 
@@ -365,7 +379,11 @@
 <p><strong>About this guide:</strong> Written by Amy Tran for Pug Guide. Amy is not a veterinarian or a licensed insurance agent. This guide is built from published quotes, consumer research and veterinary studies linked in the text; it is not insurance or veterinary advice, and your own quotes will differ. Read how we research and check our guides in our <a href="/editorial-policy.html">editorial policy</a>.</p>
 <p><strong>AI disclosure:</strong> This article was drafted with the help of AI and then fact-checked against the linked sources before publication.</p>
 </div>
-</article></div>
+</article>
+  <aside class="sidebar"><section class="sidebar-panel"><h3>About this site</h3><p>Amy Tran writes about pug breathing, eyes and everyday comfort.</p><p><a href="/about.html">More about us</a></p></section>
+<section class="sidebar-panel"><h3>Pug guides</h3><ul><li><a href="/care.html">Pug care guides</a></li><li><a href="/blog.html">All articles</a></li><li><a href="/editorial-policy.html">How we check facts</a></li></ul></section>
+  </aside>
+</div>
 
 <footer class="sc-footer">
   <div class="sc-footer-nav">
@@ -374,6 +392,7 @@
     <a href="/about.html">About</a>
     <a href="/contact.html">Contact</a>
     <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
   </div>
   <p>&copy; 2026 pugs-care.github.io &mdash; Pug Guide. All rights reserved.</p>
 </footer>

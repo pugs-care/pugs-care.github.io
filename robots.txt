@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pugs-care.github.io/sitemap.xml
