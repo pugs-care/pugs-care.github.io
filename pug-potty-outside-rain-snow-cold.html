@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pug Potty Outside in Rain, Snow and Cold: Routine Builder</title>
+<link rel="canonical" href="https://pugs-care.github.io/pug-potty-outside-rain-snow-cold.html">
+<meta name="description" content="Get a pug to potty outside in rain, snow and cold with a weather-specific plan builder, practical gear checklist and a calm, repeatable routine.">
+
+
+
+
+<style>
+  body { font-family: 'Roboto', 'Segoe UI', sans-serif; color: #333; line-height: 1.7; background:#f8f8f8; }
+  h1 { color: #4c1d95; }
+  a { color: #4c1d95; }
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start;margin:28px auto}
+  @media (max-width:860px){.layout{grid-template-columns:minmax(0,1fr)}}
+  .breadcrumb{font-size:.82rem;color:#6b7280;margin-top:14px}
+  .breadcrumb a{color:#4c1d95}
+  .breadcrumb span{margin:0 5px}
+  .pug-article{background:#fff;border-radius:8px;padding:24px 28px 32px;box-shadow:0 1px 4px rgba(0,0,0,.07);min-width:0}
+  .pug-article h1{font-size:2rem;line-height:1.25;margin:.2em 0 .6em}
+  .pug-article h2{color:#4c1d95;margin-top:2em;font-size:1.45rem;line-height:1.3}
+  .pug-article h3{color:#5b21b6;font-size:1.15rem;margin-top:1.4em}
+  .pug-article p,.pug-article ul{margin:.8em 0}
+  .pug-article ul{padding-left:1.3em}
+  .pug-article a{color:#0066cc}
+  .pug-article a:visited{color:#0052a3}
+  .pug-article a:hover{text-decoration:underline}
+  .pa-meta{color:#777;font-size:.88rem;margin:0}
+  .pa-tldr{background:#f1eafe;border-left:4px solid #4c1d95;padding:14px 18px;border-radius:6px;margin:18px 0}
+  .pa-table-wrap{overflow-x:auto;margin:16px 0}
+  .pug-article table{border-collapse:collapse;width:100%;font-size:.95rem}
+  .pug-article th{background:#4c1d95;color:#fff;text-align:left;padding:8px 10px}
+  .pug-article td{border-bottom:1px solid #e6dcf5;padding:8px 10px;vertical-align:top}
+  .pa-note{font-size:.88rem;color:#666}
+  .pug-calc{border:2px solid #4c1d95;border-radius:10px;padding:18px;background:#fffdf7;margin:18px 0}
+  .pf-title{margin-top:0;color:#5b21b6}
+  .pc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .pc-grid label{display:flex;flex-direction:column;font-size:.9rem;font-weight:600;color:#5b21b6}
+  .pc-grid input,.pc-grid select{margin-top:4px;padding:8px;border:1px solid #c7b3ef;border-radius:6px;font-size:1rem}
+  #ntGo,.nt-btn{margin-top:14px;background:#4c1d95;color:#fff;border:0;border-radius:6px;padding:10px 18px;font-size:1rem;cursor:pointer}
+  #ntGo:hover,.nt-btn:hover{background:#5b21b6}
+  .pc-sum{background:#f1eafe;border-radius:8px;padding:10px 14px;margin-top:14px}
+  .pc-sum p{margin:.3em 0}
+  .pc-err{color:#b91c1c;font-weight:600}
+  .pf-bar{height:10px;background:#e6dcf5;border-radius:5px;overflow:hidden}
+  .pf-bar span{display:block;height:100%;background:#4c1d95}
+  .pa-faq details{border:1px solid #e6dcf5;border-radius:6px;padding:10px 14px;margin:8px 0}
+  .pa-faq summary{font-weight:600;cursor:pointer;color:#5b21b6}
+  .pa-eeat{border-top:2px solid #e6dcf5;margin-top:2em;padding-top:1em;font-size:.92rem;color:#555}
+  .sidebar{position:sticky;top:70px}
+  .sidebar-about{background:#fff;border-radius:8px;padding:18px 16px;font-size:.88rem;color:#444;line-height:1.6;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px}
+  .sidebar-about strong{color:#5b21b6;display:block;margin-bottom:6px;font-size:.95rem}
+  .sidebar-links{background:#fff;border-radius:8px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  .sidebar-links h4{font-size:.9rem;color:#5b21b6;margin-bottom:10px}
+  .sidebar-links ul{list-style:none;padding:0;margin:0}
+  .sidebar-links li{padding:4px 0;border-bottom:1px solid #f0f0f0;font-size:.86rem}
+  .sidebar-links li:last-child{border:none}
+  .sidebar-links a{color:#4c1d95}
+  .nt-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .nt-plan td input{width:18px;height:18px}
+  @media print{.nt-btns,#ntGo{display:none}}
+</style>
+
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Get a Pug to Potty Outside in Rain, Snow and Cold: Gear, Routines and Tricks Pug Owners Use", "description": "Get a pug to potty outside in rain, snow and cold with a weather-specific plan builder, practical gear checklist and a calm, repeatable routine.", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "author": {"@type": "Person", "name": "Amy Tran", "url": "https://pugs-care.github.io/about.html"}, "publisher": {"@type": "Organization", "name": "Pug Guide", "url": "https://pugs-care.github.io/"}, "mainEntityOfPage": "https://pugs-care.github.io/pug-potty-outside-rain-snow-cold.html", "inLanguage": "en-US"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Should I wait until we are indoors to give the reward?", "acceptedAnswer": {"@type": "Answer", "text": "Keep it with you and reward completed toileting at the outdoor location. Dogs Trust recommends rewarding as soon as the dog has toileted. For this routine, put the reward in an accessible pocket before leaving so the return to the house does not become the moment you first reach for it."}}, {"@type": "Question", "name": "Does my pug need a raincoat before we start?", "acceptedAnswer": {"@type": "Answer", "text": "The planner does not require one. Start by identifying the obstacle and preparing the route. If you want to use a coat, practice dressing separately and use a garment your pug accepts. A clothing purchase is an equipment decision, not evidence that the toilet-training routine will work."}}, {"@type": "Question", "name": "Should I clear the entire yard after snow?", "acceptedAnswer": {"@type": "Answer", "text": "The owner reports describe clearing paths and patches rather than requiring a fully cleared yard. Try an accessible route to your familiar toilet spot if that suits your space. Those reports do not establish a required area or dimensions, so choose the layout according to the route you actually use."}}, {"@type": "Question", "name": "What if my pug comes back without going?", "acceptedAnswer": {"@type": "Answer", "text": "Return calmly and supervise the indoor reset. Dogs Trust recommends keeping a close eye on a dog that has not toileted because another trip may be needed soon. Record that nothing happened rather than assuming the outing counted as a completed toilet break. Offer the next opportunity according to what you observe."}}, {"@type": "Question", "name": "Can this planner tell me how long to stay outside?", "acceptedAnswer": {"@type": "Answer", "text": "No. It chooses preparation and training tasks from your weather, space and observed obstacle. It does not assess an individual dog's tolerance or calculate exposure time. If there is no usable route, its priority is an accessible alternative rather than completing an outdoor trip at any cost."}}, {"@type": "Question", "name": "Will my pug eventually like snow?", "acceptedAnswer": {"@type": "Answer", "text": "The public owner discussion includes different reactions to snow; it cannot predict your dog's response. Aim for a workable toilet routine rather than a love of winter. Record whether your pug reaches and uses the selected surface, and adjust the setup according to that observation."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "House training a puppy or rescue dog", "description": "Kikopup demonstrates general house-training concepts: teaching the toilet location and supervising indoors. Not a weather-specific lesson.", "thumbnailUrl": "https://i.ytimg.com/vi/QvPiFcG7ROI/hqdefault.jpg", "uploadDate": "2010-08-22", "embedUrl": "https://www.youtube-nocookie.com/embed/QvPiFcG7ROI"}</script>
+<style id="sc-pc-design">
+/* Pug Guide: party / confetti design system. Tokens first; every component uses them. */
+@font-face{font-family:"Lilita One";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/lilita-one-400-latin.woff2) format("woff2")}
+@font-face{font-family:"Quicksand";font-style:normal;font-weight:300 700;font-display:swap;src:url(/assets/fonts/quicksand-300-700-latin.woff2) format("woff2")}
+:root{--pc-violet:#7c3aed;--pc-royal:#4c1d95;--pc-lime:#a3e635;--pc-ink:#241b2f;--pc-paper:#fff9ec;--pc-lavender:#f1eafe;--pc-line:#e6dcf5;--pc-lilac:#c7b3ef;--pc-deep:#5b21b6;--pc-white:#ffffff;
+--pc-display:"Lilita One","Impact","Arial Rounded MT Bold",sans-serif;--pc-text:"Quicksand","Trebuchet MS","Segoe UI",sans-serif;
+--pc-wrap:1200px;--pc-pad:28px;--pc-side:300px;--pc-gap:40px;--pc-lift:translate(-3px,-3px);--pc-block:6px 6px 0 var(--pc-lime);
+--pc-confetti:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='%237c3aed' fill-opacity='.55'%3E%3Crect x='4' y='6' width='8' height='8' rx='2' transform='rotate(18 8 10)'/%3E%3Crect x='48' y='14' width='7' height='7' rx='2' transform='rotate(-14 51 17)'/%3E%3Ccircle cx='30' cy='34' r='4'/%3E%3Ccircle cx='60' cy='52' r='3'/ %3E%3C/g%3E%3Cg fill='%23a3e635' fill-opacity='.6'%3E%3Crect x='36' y='2' width='8' height='8' rx='2' transform='rotate(28 40 6)'/%3E%3Crect x='8' y='40' width='7' height='7' rx='2' transform='rotate(-22 11 43)'/%3E%3Ccircle cx='22' cy='62' r='3.5'/%3E%3C/g%3E%3Cg fill='%23c7b3ef' fill-opacity='.5'%3E%3Crect x='32' y='28' width='7' height='7' rx='2' transform='rotate(24 35 31)'/%3E%3Ccircle cx='44' cy='64' r='3'/ %3E%3C/g%3E%3C/svg%3E")}
+.pc-brandline{border-left:4px solid #4c1d95;padding-left:14px}
+html body{background:var(--pc-paper);color:var(--pc-ink);font:500 18px/1.7 var(--pc-text);margin:0}
+html body *{box-sizing:border-box}
+html body :is(h1,h2,h3,h4){font-family:var(--pc-display);font-weight:400;color:var(--pc-ink);line-height:1.1;text-wrap:balance}
+html body p{margin:0 0 1em}
+html body a{color:var(--pc-royal);text-decoration-thickness:2px;text-underline-offset:3px}
+html body a:hover{color:var(--pc-deep)}
+html body :is(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #0066cc;outline-offset:3px}
+html body .kicker,html body .pc-tag,html body .pc-label{display:inline-block;margin:0 0 10px;font:700 14px/1.4 var(--pc-text);letter-spacing:.14em;text-transform:uppercase;color:var(--pc-royal)}
+.pc-skip{position:absolute;left:-9999px;top:8px;background:var(--pc-paper);color:var(--pc-royal);padding:8px 12px;z-index:200;border-radius:10px;font-weight:700}.pc-skip:focus{left:10px}
+.pc-strip{height:10px;background:repeating-linear-gradient(90deg,var(--pc-violet) 0 26px,var(--pc-lime) 26px 52px,var(--pc-lilac) 52px 78px)}
+/* header: violet party bar with a confetti photo strip logo and a lime CTA pill */
+.pc-bar{background:var(--pc-deep);color:#fff;position:sticky;top:0;z-index:50;border-bottom:6px solid var(--pc-lime)}
+.pc-bar-in{max-width:var(--pc-wrap);margin:0 auto;padding:0 var(--pc-pad);min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.pc-logo,.pc-logo:visited{display:inline-flex;flex-direction:column;justify-content:center;color:#fff!important;text-decoration:none;font:400 30px/1 var(--pc-display);letter-spacing:.02em}
+.pc-logo small{display:block;font:600 11px/1.3 var(--pc-text);letter-spacing:.18em;text-transform:uppercase;color:var(--pc-lime);margin-top:5px}
+.pc-nav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:2px}
+.pc-nav a,.pc-nav a:visited{display:inline-block;color:#fff!important;text-decoration:none;padding:10px 12px;font:700 15px/1.2 var(--pc-text);letter-spacing:.06em;border-bottom:3px solid transparent}
+.pc-nav a:hover,.pc-nav a[aria-current="page"]{color:var(--pc-lime)!important;border-bottom-color:var(--pc-lime)}
+.pc-nav-cta,.pc-nav-cta:visited{margin-left:12px;background:var(--pc-lime);color:var(--pc-ink)!important;border-radius:999px;padding:11px 18px!important;transform:rotate(-1deg);box-shadow:0 3px 0 var(--pc-violet)}
+.pc-nav a.pc-nav-cta,.pc-nav a.pc-nav-cta:visited{color:var(--pc-ink)!important;border-bottom-color:transparent}
+.pc-nav-cta:hover{transform:rotate(-1deg) translateY(-2px);box-shadow:0 5px 0 var(--pc-lime)}
+.pc-nav a.pc-nav-cta:hover{color:var(--pc-ink)!important}
+.pc-menu{display:none;position:relative}
+.pc-menu summary{list-style:none;cursor:pointer;background:var(--pc-lime);color:var(--pc-ink);font:700 15px/1.2 var(--pc-text);padding:10px 18px;border-radius:999px}
+.pc-menu summary::-webkit-details-marker{display:none}
+.pc-menu nav{position:absolute;right:0;top:calc(100% + 10px);width:min(92vw,360px);background:var(--pc-deep);border:3px solid var(--pc-lime);border-radius:18px;padding:18px;box-shadow:0 20px 40px rgba(36,27,47,.4)}
+.pc-menu a.pc-menu-main{display:flex;justify-content:space-between;align-items:center;padding:13px 4px;border-bottom:2px solid rgba(255,255,255,.18);color:#fff!important;text-decoration:none;font:400 26px/1.05 var(--pc-display)}
+.pc-menu a.pc-menu-main b{color:var(--pc-lime);font-weight:400}
+.pc-menu-small{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:14px}
+.pc-menu-small a{color:#fff!important;font-weight:600;padding:5px 0;font-size:15px}
+/* home */
+.pc-hero{background:var(--pc-violet);color:#fff;overflow:hidden;position:relative}
+.pc-hero::after{content:"";position:absolute;inset:0;background:var(--pc-confetti);opacity:.5;pointer-events:none}
+.pc-hero-in{position:relative;max-width:var(--pc-wrap);margin:0 auto;padding:72px var(--pc-pad) 76px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:center}
+.pc-hero .pc-tag{background:var(--pc-lime);color:var(--pc-ink);padding:7px 14px;border-radius:999px;letter-spacing:.12em}
+.pc-hero h1{margin:20px 0 18px;color:#fff;font-size:clamp(44px,6vw,86px);line-height:.98}
+.pc-hero h1 em{font-style:normal;color:var(--pc-lime)}
+.pc-hero-lead{margin:0 0 28px;max-width:46ch;font-size:20px;color:#fff}
+.pc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 32px}
+.pc-actions>a:not(.pc-btn){color:#fff!important;font-weight:700;letter-spacing:.04em}
+.pc-hero-fig{margin:0;background:var(--pc-paper);border:4px solid var(--pc-ink);border-radius:22px;padding:12px 12px 10px;transform:rotate(2deg);box-shadow:12px 12px 0 rgba(36,27,47,.35);position:relative}
+.pc-hero-fig::before{content:"party!";position:absolute;left:-16px;top:-18px;background:var(--pc-lime);color:var(--pc-ink);font:700 14px/1 var(--pc-text);letter-spacing:.1em;padding:8px 12px;border-radius:999px;transform:rotate(-8deg);border:2px solid var(--pc-ink)}
+.pc-hero-fig img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 25%;border-radius:14px}
+.pc-hero-fig figcaption{font:600 12px/1.3 var(--pc-text);color:var(--pc-royal);letter-spacing:.08em;text-transform:uppercase;margin-top:8px;text-align:center}
+.pc-sec{max-width:var(--pc-wrap);margin:0 auto;padding:72px var(--pc-pad)}
+.pc-sec-head h2{font-size:clamp(34px,4.4vw,58px);margin:4px 0 12px}
+.pc-sec-lead{margin:0;max-width:62ch;color:#6a5a7a}
+.pc-white{background:#fff;border-top:3px solid var(--pc-line);border-bottom:3px solid var(--pc-line)}
+/* paths */
+.pc-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:36px}
+.pc-path{display:flex;flex-direction:column;background:#fff;border:3px solid var(--pc-ink);border-radius:22px;padding:26px;position:relative;overflow:hidden}
+.pc-path::before{content:"";display:block;height:10px;margin:-26px -26px 20px;background:repeating-linear-gradient(90deg,var(--pc-violet) 0 22px,var(--pc-lime) 22px 44px,var(--pc-lilac) 44px 66px)}
+.pc-path svg{width:56px;height:56px}
+.pc-path h3{margin:14px 0 8px;font-size:30px}
+.pc-path p{margin:0 0 18px;color:#6a5a7a}
+.pc-path a{margin-top:auto;font-weight:700;letter-spacing:.04em}
+.pc-whiteband{max-width:var(--pc-wrap);margin:0 auto;padding:0 var(--pc-pad)}
+/* steps */
+.pc-steps{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;counter-reset:pcstep}
+.pc-steps li{border:3px solid var(--pc-ink);border-radius:22px;background:#fff;padding:22px;position:relative;counter-increment:pcstep}
+.pc-steps li::before{content:counter(pcstep,decimal-leading-zero);display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--pc-violet);color:#fff;font:400 18px/1 var(--pc-display);margin-bottom:12px}
+.pc-steps h3{margin:0 0 6px;font-size:24px}
+.pc-steps p{margin:0;color:#6a5a7a;font-size:16px}
+/* cards */
+.pc-feed{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:36px}
+html body .card{position:relative;margin:0;padding:24px 26px 22px;background:#fff;border:3px solid var(--pc-ink);border-radius:22px;transition:transform .15s,box-shadow .15s}
+html body .card:hover{transform:var(--pc-lift);box-shadow:var(--pc-block)}
+html body .card .card-date{display:inline-block;margin:0 0 12px;background:var(--pc-lilac);color:var(--pc-royal);border:2px solid var(--pc-ink);border-radius:999px;padding:4px 12px;font:700 14px/1.2 var(--pc-text);letter-spacing:.06em}
+html body .card .kicker{margin-bottom:6px}
+html body .card :is(h2,h3){margin:0 0 10px;font-size:26px;line-height:1.12}
+html body .card :is(h2,h3) a,.pc-feed .card :is(h2,h3) a{color:var(--pc-ink);text-decoration:none}
+html body .card :is(h2,h3) a:hover{color:var(--pc-royal);text-decoration:underline;text-decoration-color:var(--pc-lime);text-decoration-thickness:4px}
+html body .card p{margin:0 0 8px;color:#6a5a7a}
+.pc-read{display:inline-block;margin-top:6px;font-weight:700;letter-spacing:.04em}
+.pc-read::after{content:" \2192"}
+/* numbers */
+.pc-nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:36px 0 0}
+.pc-num{background:var(--pc-lime);border:3px solid var(--pc-ink);border-radius:22px;padding:26px;transform:rotate(-.5deg)}
+.pc-num:nth-child(2){background:var(--pc-lilac);transform:rotate(.6deg)}
+.pc-num strong{display:block;font:400 clamp(46px,6vw,72px)/.95 var(--pc-display);color:var(--pc-ink);margin:0 0 6px}
+.pc-num span{font-weight:600;color:var(--pc-ink)}
+/* closing band */
+.pc-final{background:var(--pc-ink);color:#fff}
+.pc-final-in{max-width:var(--pc-wrap);margin:0 auto;padding:72px var(--pc-pad);display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.pc-final .pc-tag{color:var(--pc-lime)}
+.pc-final h2{margin:10px 0 12px;color:#fff;font-size:clamp(34px,4.4vw,60px)}
+.pc-final p{margin:0;max-width:52ch;color:#d8d0e6}
+.pc-final .pc-btn{flex:none}
+.pc-checks{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px;font-weight:700}
+.pc-checks li{display:flex;align-items:center;gap:10px;color:var(--pc-lime)}
+.pc-checks li::before{content:"";width:10px;height:18px;border:solid var(--pc-lime);border-width:0 4px 4px 0;transform:rotate(45deg) translateY(-4px)}
+/* buttons */
+.pc-btn,.pc-btn:visited{display:inline-block;background:var(--pc-lime);color:var(--pc-ink)!important;border:3px solid var(--pc-ink);border-radius:999px;padding:13px 26px;font:700 17px/1.2 var(--pc-text);letter-spacing:.03em;text-decoration:none;cursor:pointer;box-shadow:0 4px 0 var(--pc-violet)}
+.pc-btn:hover{transform:translateY(-2px);box-shadow:0 7px 0 var(--pc-violet);color:var(--pc-ink)!important}
+.pc-btn.pc-on-dark{background:var(--pc-lime);box-shadow:0 4px 0 #fff}
+.pc-btn.pc-on-dark:hover{box-shadow:0 7px 0 #fff}
+.pc-btn.pc-ghost{background:transparent;color:#fff!important;border-color:#fff;box-shadow:none}
+.pc-btn.pc-ghost:hover{background:rgba(255,255,255,.12)}
+/* footer */
+.pc-foot{background:var(--pc-ink);color:#d8d0e6;border-top:12px solid var(--pc-lime)}
+.pc-foot-in{max-width:var(--pc-wrap);margin:0 auto;padding:44px var(--pc-pad) 26px}
+.pc-foot-word{margin:0 0 30px;font:400 clamp(58px,11vw,150px)/.85 var(--pc-display);color:var(--pc-lime);white-space:nowrap;overflow:hidden;letter-spacing:.01em}
+.pc-foot-cols{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr) minmax(0,1fr);gap:40px;border-top:2px solid rgba(255,255,255,.18);padding-top:26px}
+.pc-foot h2{margin:0 0 10px;font:700 14px/1.3 var(--pc-text);letter-spacing:.16em;text-transform:uppercase;color:var(--pc-lime)}
+.pc-foot-cols p{margin:0;max-width:52ch;color:#c3bad1;font-size:16px}
+.pc-foot ul{list-style:none;margin:0;padding:0}
+.pc-foot li a,.pc-foot li a:visited{display:inline-block;padding:5px 0;color:#fff;font-weight:600}
+.pc-foot-copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.15);font-size:14px;color:#a99cb8}
+.pc-foot-copy a{color:var(--pc-lime)}
+/* article pages: legacy markup restyled; bodies untouched; photo + H1 aligned to the article column */
+html body .layout{max-width:var(--pc-wrap);margin:34px auto 80px;padding:0 var(--pc-pad);display:grid;grid-template-columns:minmax(0,1fr) var(--pc-side);gap:var(--pc-gap);align-items:start}
+.pc-article{min-width:0;display:block}
+.pc-crumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:15px;color:#7a6b8a;margin:0 0 14px}
+.pc-crumbs a,.pc-crumbs a:visited{color:#7a6b8a}
+.pc-crumbs a:hover{color:var(--pc-royal)}
+html body .pug-article{display:flex;flex-direction:column;background:#fff;border:3px solid var(--pc-ink);border-radius:24px;padding:36px 38px 44px;box-shadow:8px 8px 0 var(--pc-lilac);min-width:0}
+html body .pug-article .kicker{align-self:flex-start;background:var(--pc-violet);color:#fff;padding:7px 14px;border-radius:999px}
+html body .pug-article .hero-photo{order:-1;width:100%;margin:0 0 24px;padding:0;border-radius:18px;overflow:hidden;border:3px solid var(--pc-ink);background:var(--pc-lavender)}
+html body .pug-article .hero-photo img{display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:50% 25%;border-radius:0}
+html body .pug-article .hero-photo figcaption{font:600 12px/1.4 var(--pc-text);letter-spacing:.08em;text-transform:uppercase;color:#7a6b8a;padding:6px 12px}
+html body .pug-article h1{margin:0 0 8px;font-size:clamp(30px,3.6vw,46px);line-height:1.08}
+html body .pug-article h2{margin:40px 0 10px;font-size:clamp(26px,2.8vw,34px);border-bottom:3px solid var(--pc-lime);padding-bottom:6px}
+html body .pug-article h3{margin:26px 0 8px;font-size:24px}
+html body .pug-article p,html body .pug-article li{color:#3c3446}
+html body .pug-article :is(ul,ol){padding-left:24px;margin:0 0 1.2em}
+html body .pug-article a{color:#0066cc}
+html body .pug-article a:visited{color:#0052a3}
+html body .pug-article table{border:2px solid var(--pc-ink);border-collapse:collapse;width:100%;margin:18px 0;font-size:16px;display:block;max-width:100%;overflow-x:auto}
+html body .pug-article th{background:var(--pc-deep);color:#fff;text-align:left;padding:10px 12px;border:0}
+html body .pug-article td{border-top:1px solid var(--pc-line);padding:10px 12px;vertical-align:top}
+html body .pug-article blockquote{margin:20px 0;padding:16px 20px;background:var(--pc-lavender);border-left:5px solid var(--pc-violet);border-radius:12px}
+html body .pug-article details{border:2px solid var(--pc-line);border-radius:14px;padding:12px 16px;margin:10px 0;background:#fff}
+html body .pug-article summary{cursor:pointer;font-weight:700;color:var(--pc-ink)}
+html body .pug-article :is(.pa-tldr,.pa-note,.pa-eeat,.pc-sum){border-left:4px solid var(--pc-violet);background:var(--pc-lavender);border-radius:12px}
+html body .pug-article .pa-tldr{padding:14px 18px;margin:18px 0}
+html body .pug-article .pa-eeat{border-top:0;padding:16px 18px;font-size:.92rem;color:#6a5a7a}
+html body .pug-article .pug-calc{border:3px solid var(--pc-violet);border-radius:18px;background:#fff;padding:20px}
+html body .pug-article .pc-grid input,html body .pug-article .pc-grid select,html body .pug-article input,html body .pug-article select{border:2px solid var(--pc-lilac);border-radius:12px;padding:9px 12px;font:inherit;font-size:16px;background:#fff;max-width:100%}
+html body .pug-article button{padding:11px 20px;border:3px solid var(--pc-ink);border-radius:999px;background:var(--pc-violet);color:#fff;font:700 16px/1.2 var(--pc-text);cursor:pointer;box-shadow:0 4px 0 var(--pc-lime)}
+html body .pug-article button:hover{transform:translateY(-2px);box-shadow:0 7px 0 var(--pc-lime)}
+html body .pug-article .pa-faq details{border:2px solid var(--pc-line);border-radius:14px}
+html body .pug-article .pa-faq summary{color:var(--pc-ink)}
+/* sidebar */
+html body .sidebar{position:sticky;top:20px;max-height:calc(100vh - 32px);overflow:auto;display:grid;gap:20px;align-self:start;min-width:0}
+.pc-cta{background:var(--pc-violet);color:#fff;border:3px solid var(--pc-ink);border-radius:22px;padding:22px;position:relative;overflow:hidden}
+.pc-cta::after{content:"";position:absolute;inset:0;background:var(--pc-confetti);opacity:.35;pointer-events:none}
+.pc-cta>*{position:relative}
+.pc-cta .pc-tag{color:var(--pc-lime)}
+.pc-cta h3{margin:0 0 8px;color:#fff;font-size:28px}
+.pc-cta p{margin:0 0 18px;color:#f1eafe;font-size:15px}
+.pc-cta .pc-btn{background:var(--pc-lime);color:var(--pc-ink)!important;box-shadow:0 4px 0 #fff;font-size:15px;padding:11px 20px}
+html body .sidebar-about,html body .sidebar-links,html body .sidebar-panel{background:#fff;border:3px solid var(--pc-ink);border-radius:18px;box-shadow:6px 6px 0 var(--pc-lavender);padding:18px 20px}
+html body .sidebar-about strong{display:block;color:var(--pc-royal);margin-bottom:6px;font-size:15px}
+html body .sidebar-about,html body .sidebar-links{font-size:15px;color:#4a4154}
+html body .sidebar h4{font:700 14px/1.3 var(--pc-text);letter-spacing:.14em;text-transform:uppercase;color:var(--pc-royal);margin:0 0 10px}
+html body .sidebar-links ul{list-style:none;padding:0;margin:0}
+html body .sidebar-links li{padding:5px 0;border-bottom:1px solid var(--pc-line);font-size:15px}
+html body .sidebar-links li:last-child{border-bottom:0}
+html body .sidebar-links a{color:var(--pc-royal);font-weight:600}
+/* static pages */
+html body .breadcrumb{background:transparent;border:0}
+html body .breadcrumb-inner{max-width:var(--pc-wrap)!important;margin:0 auto;padding:14px var(--pc-pad);font-size:14px;display:flex;flex-wrap:wrap;gap:8px;color:#7a6b8a}
+html body .breadcrumb a{color:#7a6b8a}
+html body .breadcrumb span[aria-current="page"]{font-weight:600;color:var(--pc-royal)}
+html body .wrap{max-width:var(--pc-wrap);margin:0 auto 80px;padding:0 var(--pc-pad)}
+html body .follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:start;margin:0}
+html body .panel{min-width:0;background:#fff;border:3px solid var(--pc-ink);border-radius:24px;box-shadow:8px 8px 0 var(--pc-lilac);padding:36px 38px}
+html body .panel h1{font-size:clamp(32px,4vw,52px);margin:0 0 12px}
+html body .panel h2{font-size:30px;margin:30px 0 10px}
+html body .panel :is(p,li){color:#3c3446}
+html body .panel p{margin:0 0 14px}
+html body .panel :is(ul,ol){padding-left:24px;margin:0 0 16px}
+html body .panel a{color:#0066cc}
+html body .panel a:visited{color:#0052a3}
+html body .follow-sidebar-panel{background:#fff;border:3px solid var(--pc-ink);border-radius:18px;box-shadow:6px 6px 0 var(--pc-lavender);padding:20px;margin:0 0 16px}
+html body .follow-sidebar-panel h2{font:700 14px/1.3 var(--pc-text);letter-spacing:.14em;text-transform:uppercase;color:var(--pc-royal);margin:0 0 10px}
+html body .follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+html body .follow-sidebar-panel li a{display:block;padding:7px 0;color:var(--pc-royal);font-weight:600}
+/* blog index */
+.pc-index-head{background:var(--pc-deep);color:#fff}
+.pc-index-head-in{max-width:var(--pc-wrap);margin:0 auto;padding:38px var(--pc-pad) 56px}
+.pc-crumbs-top{margin:0 0 24px;font-size:15px;color:#cfc0e8}
+.pc-crumbs-top a{color:#fff;font-weight:600}
+.pc-index-head .pc-tag{color:var(--pc-lime)}
+.pc-index-head h1{margin:12px 0 14px;color:#fff;font-size:clamp(48px,6vw,88px);line-height:.96}
+.pc-index-head h1 span{color:var(--pc-lime)}
+.pc-index-head p{margin:0;max-width:58ch;color:#e6dcf2}
+.pc-promo{margin-top:48px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;background:var(--pc-lime);border:3px solid var(--pc-ink);border-radius:22px;padding:28px 32px;box-shadow:8px 8px 0 var(--pc-violet)}
+.pc-promo h2{margin:6px 0 6px;font-size:clamp(30px,3.4vw,46px)}
+.pc-promo p{margin:0;max-width:50ch;font-weight:600}
+
+/* tool page */
+.pc-tool-hero{background:var(--pc-violet);color:#fff;position:relative;overflow:hidden}
+.pc-tool-hero::before{content:"";position:absolute;inset:0;background:var(--pc-confetti);opacity:.4;pointer-events:none}
+.pc-tool-hero-in{position:relative;max-width:var(--pc-wrap);margin:0 auto;padding:56px var(--pc-pad) 60px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:48px;align-items:center}
+.pc-tool-hero .pc-tag{background:var(--pc-lime);color:var(--pc-ink);padding:7px 14px;border-radius:999px}
+.pc-tool-hero h1{margin:16px 0 14px;color:#fff;font-size:clamp(40px,5.4vw,76px);line-height:1}
+.pc-tool-hero h1 em{font-style:normal;color:var(--pc-lime)}
+.pc-tool-hero .pc-hero-lead{margin:0;max-width:48ch;color:#fff}
+.pc-tool-form{background:#fff;border:3px solid var(--pc-ink);border-radius:24px;box-shadow:8px 8px 0 var(--pc-lilac);padding:26px 28px;margin:0 0 8px}
+.pc-tool-form fieldset{border:3px solid var(--pc-violet);border-radius:18px;padding:18px 20px;margin:0 0 18px}
+.pc-tool-form legend{font:700 15px/1.3 var(--pc-text);letter-spacing:.1em;text-transform:uppercase;color:var(--pc-royal);padding:0 8px}
+.pc-tool-form .pc-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.pc-tool-form label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px;letter-spacing:.02em;color:var(--pc-ink)}
+.pc-tool-form input,.pc-tool-form select{width:100%;min-height:46px;border:2px solid var(--pc-lilac);border-radius:12px;padding:0 12px;font:600 16px/1.4 var(--pc-text);background:#fff;color:var(--pc-ink)}
+.pc-tool-form .pc-checks{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.pc-tool-form .pc-checks li{display:inline-flex;align-items:center;gap:8px}
+.pc-tool-form .pc-checks input{width:auto;min-height:0}
+.pc-theme-chips{display:flex;gap:10px;flex-wrap:wrap}
+.pc-theme-chips .pc-chip{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--pc-line);border-radius:999px;padding:8px 14px;font-weight:600;cursor:pointer;background:#fff}
+.pc-theme-chips .pc-chip input{width:auto;min-height:0}
+.pc-theme-chips .pc-chip:has(input:checked){border-color:var(--pc-violet);background:var(--pc-lavender)}
+.pc-tool-submit{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.pc-reset{background:#fff!important;color:var(--pc-ink)!important;box-shadow:0 4px 0 var(--pc-line)!important}
+.pc-error{color:#b91c1c;font-weight:700;margin:12px 0 0}
+/* printable kit sheet */
+.pc-kit{background:var(--pc-paper);border:3px dashed var(--pc-ink);border-radius:24px}
+.pc-sheet{background:#fff;border:3px solid var(--pc-ink);border-radius:22px;box-shadow:8px 8px 0 var(--pc-lilac);overflow:hidden}
+.pc-sheet-band{background:var(--pc-violet);color:#fff;padding:26px 30px;position:relative}
+.pc-sheet-band::after{content:"";position:absolute;inset:0;background:var(--pc-confetti);opacity:.4;pointer-events:none}
+.pc-sheet-band>*{position:relative}
+.pc-sheet-band .pc-tag{color:var(--pc-lime)}
+.pc-sheet-band h2{margin:8px 0 10px;color:#fff;font-size:clamp(34px,4.6vw,64px);line-height:1}
+.pc-sheet-band p{margin:0;color:#fff;max-width:60ch}
+.pc-sheet-body{padding:30px 34px}
+.pc-sheet h3{font-size:28px;margin:34px 0 10px;color:var(--pc-royal)}
+.pc-sheet h3 .n{color:var(--pc-lilac)}
+.pc-dets{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.pc-dets div{background:var(--pc-lavender);border:3px solid var(--pc-ink);border-radius:14px;padding:12px 14px}
+.pc-dets small{display:block;font:700 12px/1.3 var(--pc-text);letter-spacing:.1em;text-transform:uppercase;color:var(--pc-royal)}
+.pc-dets b{display:block;margin-top:3px;font-weight:700}
+.pc-guest{border:3px solid var(--pc-ink);border-radius:14px;padding:10px 14px;margin:0 0 10px;display:flex;gap:10px;align-items:center}
+.pc-paw{width:22px;height:22px;border:3px solid var(--pc-ink);border-radius:8px;flex:none;background:var(--pc-lavender)}
+.pc-guest b{font-weight:700}
+.pc-timeline{list-style:none;margin:0;padding:0}
+.pc-timeline li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;border-bottom:2px dashed var(--pc-line);padding:12px 0}
+.pc-timeline time{font:700 15px/1.4 var(--pc-text);color:var(--pc-royal)}
+.pc-timeline b{display:block}
+.pc-timeline span{color:#6a5a7a;font-size:15px}
+.pc-list{counter-reset:pclist;list-style:none;margin:0;padding:0}
+.pc-list li{display:flex;gap:12px;align-items:flex-start;border-bottom:2px solid var(--pc-line);padding:10px 0;counter-increment:pclist}
+.pc-list li::before{content:"\2713";width:26px;height:26px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:3px solid var(--pc-ink);border-radius:8px;background:var(--pc-lime);color:var(--pc-ink);font-weight:700;font-size:14px}
+.pc-tools{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
+.pc-tools .pc-btn{margin:0}
+.pc-status{min-height:1.5em;margin:14px 0 0;font-weight:700;color:var(--pc-ink)}
+.pc-how h2{font-size:30px;margin:40px 0 10px}
+.pc-ai-note{font-size:15px;color:#6a5a7a;background:var(--pc-lavender);border-radius:14px;padding:14px 18px;margin:26px 0 0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+@media (min-width:1025px) and (max-width:1439px){:root{--pc-pad:40px;--pc-side:288px;--pc-gap:36px}html body{font-size:17px}.pc-hero h1{font-size:66px}.pc-hero-in{gap:44px}}
+@media (max-width:1024px){:root{--pc-pad:24px;--pc-side:260px;--pc-gap:30px}.pc-hero-in{gap:36px;padding-top:54px;padding-bottom:58px}.pc-hero h1{font-size:58px}.pc-paths{grid-template-columns:minmax(0,1fr)}.pc-path{display:grid;grid-template-columns:64px 1fr;column-gap:18px;align-items:start}.pc-path::before{margin:-26px -26px 14px;grid-column:1/-1}.pc-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.pc-feed{grid-template-columns:minmax(0,1fr)}.pc-tool-hero-in{grid-template-columns:minmax(0,1fr) auto;gap:32px}.pc-tool-hero figcaption{display:none}.pc-tool-hero .pc-hero-fig{max-width:220px;transform:none}}
+@media (max-width:900px){.pc-nav{display:none}.pc-menu{display:block}.pc-bar-in{min-height:62px}.pc-logo,.pc-logo:visited{font-size:26px}}
+@media (max-width:767px){:root{--pc-pad:16px;--pc-gap:28px}html body{font-size:17px}.pc-logo small{display:none}.pc-hero-in{grid-template-columns:minmax(0,1fr);padding-top:36px;padding-bottom:44px;gap:14px}.pc-hero h1{font-size:46px}.pc-hero-lead{font-size:18px}.pc-hero-fig{max-width:300px;margin:26px auto 0}.pc-sec{padding:52px 16px}.pc-sec-head h2{font-size:38px}.pc-paths{grid-template-columns:minmax(0,1fr)}.pc-path{display:flex}.pc-steps{grid-template-columns:minmax(0,1fr)}.pc-nums{grid-template-columns:minmax(0,1fr)}.pc-final-in{flex-direction:column;align-items:flex-start;padding-top:54px;padding-bottom:54px}.pc-foot-cols{grid-template-columns:minmax(0,1fr);gap:26px}html body .layout{grid-template-columns:minmax(0,1fr);margin:24px auto 52px;gap:28px}html body .pug-article{padding:24px 18px 30px;box-shadow:4px 4px 0 var(--pc-lilac)}html body .pug-article h1{font-size:30px}html body .pug-article .hero-photo{aspect-ratio:auto;border-radius:12px}html body .pug-article .hero-photo img{aspect-ratio:16/9}html body .sidebar{position:static;max-height:none;overflow:visible}html body .follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:28px}html body .panel{padding:24px 18px;box-shadow:4px 4px 0 var(--pc-lilac)}.pc-tool-hero-in{grid-template-columns:minmax(0,1fr);padding-top:34px;padding-bottom:42px}.pc-tool-hero h1{font-size:40px}.pc-tool-hero .pc-hero-fig{display:none}.pc-tool-form{padding:20px 16px}.pc-tool-form .pc-row{grid-template-columns:minmax(0,1fr)}.pc-sheet-band{padding:20px 18px}.pc-sheet-body{padding:22px 16px}.pc-sheet h3{font-size:24px}.pc-timeline li{grid-template-columns:74px minmax(0,1fr)}}
+@media print{html body{background:#fff;font-size:12pt}.pc-skip,.pc-bar,.pc-foot,.pc-cta,.pc-tools,.pc-tool-form,.pc-crumbs,.pc-sidebar-hide,.pc-menu,.pc-hero-fig{display:none!important}html body .layout,html body .pc-article{display:block;max-width:none;margin:0;padding:0}html body .pug-article,html body .panel,html body .pc-sheet{box-shadow:none;border-color:#999}body{visibility:hidden}#pc-sheet,#pc-sheet *{visibility:visible}#pc-sheet{position:absolute;left:0;top:0;width:100%;margin:0;border:0;border-radius:0}@page{margin:12mm}}
+</style>
+</head>
+<body>
+<header class="sc-topbar pc-bar">
+  <div class="pc-bar-in">
+    <a class="pc-logo" href="/">Pug Guide<small>grooming &middot; gear &middot; daily care</small></a>
+    <nav class="pc-nav" aria-label="Main"><ul><li><a href="/">Home</a></li><li><a href="/blog.html">Guides</a></li><li><a href="/care.html">Care</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li><li><a class="pc-nav-cta" href="/pug-birthday-party-planner.html" data-pc-from="nav">Birthday planner</a></li></ul></nav>
+    <details class="pc-menu"><summary><span>Menu</span></summary><nav aria-label="Mobile"><a class="pc-menu-main" href="/pug-birthday-party-planner.html" data-pc-from="nav_mobile"><span>Birthday planner</span><b>&rarr;</b></a><a class="pc-menu-main" href="/blog.html"><span>All guides</span><b>&rarr;</b></a><div class="pc-menu-small"><a href="/">Home</a><a href="/care.html">Care</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/sitemap.html">Sitemap</a></div></nav></details>
+  </div>
+</header>
+
+
+
+
+
+<a class="pc-skip" href="#pc-main">Skip to content</a>
+
+<div class="pc-strip" aria-hidden="true"></div>
+<div class="layout" id="pc-main">
+  <div class="pc-article">
+    <nav class="pc-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog.html">Guides</a> &rsaquo; <span aria-current="page">Pug potty trips in bad weather</span></nav>
+    <article class="panel pug-article">
+<p class="kicker">Training &amp; everyday routines</p>
+<h1>How to Get a Pug to Potty Outside in Rain, Snow and Cold</h1>
+<p>To get a pug to potty outside in rain, snow and cold, start with a familiar toilet spot, an easy route to it and a reward ready at the spot. Keep the outing focused on toileting rather than turning a wet doorstep into a negotiation. The plan below helps you choose what to change first: the weather exposure, the surface underfoot, the clothing routine or what happens after an unsuccessful trip.</p>
+<div class="pa-tldr"><p><strong>Quick answer:</strong> Prepare the route before bringing your pug out, offer the same toilet area, reward completed toileting there and return indoors calmly if nothing happens. Supervise the reset and offer another opportunity when your pug indicates a need. A cleared patch is an owner-reported workaround, not a guarantee that every pug will use it.</p></div>
+<section class="pug-calc" aria-labelledby="planner-title">
+<h2 id="planner-title">Build your bad-weather potty plan</h2>
+<p>Choose the obstacle you actually see. This planner prioritizes setup and training tasks; it does not calculate weather exposure limits or how long a dog can wait.</p>
+<div class="pc-grid">
+<label>Weather<select id="pw-weather"><option value="rain">Rain</option><option value="snow">Snow</option><option value="cold">Cold and dry</option></select></label>
+<label>Available toilet area<select id="pw-space"><option value="yard">Private yard</option><option value="shared">Shared outdoor area</option><option value="none">No usable outdoor route right now</option></select></label>
+<label>Where does the trip stall?<select id="pw-obstacle"><option value="door">At the doorway</option><option value="surface">At the toilet surface</option><option value="gear">While putting on clothing</option><option value="return">Comes home without toileting</option></select></label>
+<label>Usual surface<select id="pw-surface"><option value="grass">Grass</option><option value="paving">Paving</option><option value="tray">A designated toilet tray</option></select></label>
+</div>
+<button class="nt-btn" id="pw-build" type="button">Build my plan</button>
+<div id="pw-result" class="pc-sum" role="status" aria-live="polite"><p>Select your situation, then build your plan. With JavaScript off, use the weather and troubleshooting tables below.</p></div>
+<button class="nt-btn" id="pw-print" type="button">Print this page</button>
+<p class="pa-note">Your choices stay in this page; no account, email address or location is needed.</p>
+</section>
+<p>For the underlying training sequence, Kikopup's <a href="https://www.youtube.com/watch?v=QvPiFcG7ROI">house-training demonstration</a> covers teaching a puppy or rescue dog where to toilet and supervising indoors. The 2010 lesson illustrates the training basics, rather than winter gear or a pug-specific weather protocol.</p>
+<div style="position:relative;width:100%;aspect-ratio:16/9"><iframe src="https://www.youtube-nocookie.com/embed/QvPiFcG7ROI" loading="lazy" title="Kikopup: House training a puppy or rescue dog" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen></iframe></div>
+<h2>What is the most useful routine in bad weather?</h2>
+<p>Use a repeatable sequence: prepare, accompany, offer the toilet spot, reward the finished behavior, then return. Dogs Trust's <a href="https://www.dogstrust.org.uk/dog-advice/training/basics/house-or-toilet-training">house-training guidance</a> recommends opportunities after sleep, eating or drinking, and play, plus rewarding promptly after toileting. Keep rewards outside with you.</p>
+<p>For your own routine, arrange the human equipment first. Put on your coat, find the lead, prepare the reward and check the route before inviting your pug to the door. That makes the doorway a departure point instead of a holding area while you search for shoes. Keep the reward somewhere you can reach without opening several pockets.</p>
+<div class="pa-table-wrap"><table><thead><tr><th>Stage</th><th>Practical action</th><th>What to record</th></tr></thead><tbody>
+<tr><td>Prepare</td><td>Set out lead, reward and towel before calling your pug.</td><td>Was departure interrupted?</td></tr>
+<tr><td>Offer</td><td>Accompany your pug to the chosen spot without turning it into a long tour.</td><td>Did your pug reach the surface?</td></tr>
+<tr><td>Finish</td><td>Reward completed toileting at the location.</td><td>Was the reward delivered outside?</td></tr>
+<tr><td>Reset</td><td>If nothing happened, return calmly and supervise.</td><td>What happened before the next attempt?</td></tr>
+</tbody></table></div>
+<p>Use an existing daily event as the reminder to offer a trip. If breakfast already has a predictable place in your household, connect the outdoor opportunity to that routine rather than relying on memory while checking the forecast. Our guide to <a href="/fluff-trough-review-for-pugs.html">feeding-station layout for pugs</a> may help organize that part of the morning, but changing a bowl is not a toilet-training technique.</p>
+<p><strong>Keep the task small:</strong> a toilet trip needs a destination and an ending. Save extra sniffing routes and play for a separate decision. If the outing succeeds, acknowledge it at the spot instead of waiting until you reach the kitchen.</p>
+<h2>How do you handle rain without a doorstep standoff?</h2>
+<p>For rain, try reducing the exposed part of the route while keeping the toilet destination familiar. Treat shelter as an arrangement to test, not as proof that your pug needs a new raincoat. Start by looking at where the trip stops: under the doorway, at a puddle or only on the wet toilet surface.</p>
+<p>Choose an existing sheltered approach if you have one. Stand so that you are not blocking the exit or looming over the dog. If using an umbrella, introduce it indoors while it is still and let your pug move around it before trying to combine umbrella handling with a toilet trip. Do not open it suddenly over your pug as an experiment at the door.</p>
+<p>A coat can be part of your routine if your pug already accepts it. If dressing is where everything breaks down, separate coat practice from the urgent outdoor task. Lay the garment out, let your pug approach and practice the fastening routine during an ordinary indoor moment. For measurement and garment shape, use our <a href="/pug-clothes-size-guide.html">pug clothing fit guide</a> before buying by a size label alone.</p>
+<p>Write down which change you made. “Used the covered approach” is more informative than “rain training went badly.” Leave the toilet surface and reward routine unchanged during that trial so you can tell what you were actually testing. If rain still blocks the outing, the planner's obstacle choices help separate doorway practice from surface practice.</p>
+<h2>What do pug owners actually do when snow covers the grass?</h2>
+<p>Some owners expose a patch of familiar ground and clear a route to it. In a <a href="https://www.reddit.com/r/pugs/comments/1rch96a/holy_snowmageddon_what_is_everyone_in_the/">2026 r/pugs snow discussion</a>, commenters describe shoveling paths, sweeping snow off grass and sheltering a patch before snowfall. Other commenters describe pugs that enjoy snow. These are individual reports, not a breed-wide success rate.</p>
+<p>Use that idea as a setup trial: clear the approach as well as the destination, then offer the familiar spot. Clearing a destination that your pug cannot comfortably reach leaves the route problem unresolved. Do the preparation before bringing the dog outside, rather than expecting your pug to wait while you shovel around them.</p>
+<div class="pa-tldr"><p><strong>Owner report versus evidence:</strong> a cleared patch is a practical idea worth trying when it suits your space. The discussion does not establish a minimum patch size, a necessary snow depth or a reliable number of attempts. This guide deliberately gives none.</p></div>
+<p>If you are considering covering an area before snow, plan where the cover will go when removed. Offer the uncovered toilet surface, not a loose sheet that becomes a new surface to negotiate. In shared spaces, work within the site's normal access arrangements; do not relocate objects or install a shelter on someone else's area.</p>
+<p>For an apartment, identify the outdoor destination before the weather arrives. Keep a backup location in mind if the ordinary route is unavailable. A backup is useful only if you can actually reach and use it; a patch across an inaccessible courtyard is not a workable plan for that trip.</p>
+<h2>What changes when it is cold but the ground is dry?</h2>
+<p>When snow and rain are absent, use the planner to focus on departure and the toilet task itself. Lay out the familiar equipment, choose the ordinary destination and get the route ready. Do not assume a stalled trip needs snow gear just because the day feels wintry.</p>
+<p>If your pug accepts a coat, include it in the prepared departure. If the coat is the sticking point, practice dressing separately. Keep the outdoor goal clear: offer the chosen spot and observe whether your pug uses it. The plan does not prescribe a time to wait outside, and there is no temperature threshold that it can calculate from these inputs.</p>
+<p>For your outing log, distinguish “would not leave the entrance” from “reached the spot but did not toilet.” Those observations suggest different practice tasks. Keep the next trial simple enough that you can describe what changed without listing an entirely new set of equipment.</p>
+<h2>Which gear earns a place by the door?</h2>
+<p>Choose equipment by the problem it addresses. Start with the gear you already use successfully, then add an item only when the route or routine calls for it. The table is an editorial packing checklist, not a tested product ranking or a claim that every pug needs every item.</p>
+<div class="pa-table-wrap"><table><thead><tr><th>Item</th><th>Job in this routine</th><th>What to check first</th></tr></thead><tbody>
+<tr><td>Familiar lead and harness</td><td>Accompany your pug to the chosen destination.</td><td>Can you put them on without a struggle?</td></tr>
+<tr><td>Reward pouch</td><td>Keep the reward available at the toilet spot.</td><td>Can you open it while holding the lead?</td></tr>
+<tr><td>Accepted coat</td><td>Make clothing part of an already practiced departure.</td><td>Does dressing interrupt the trip?</td></tr>
+<tr><td>Shovel or broom</td><td>Prepare an approach and exposed toilet patch in snow.</td><td>Is the route ready before you bring the dog out?</td></tr>
+<tr><td>Umbrella</td><td>Try a sheltered approach in rain.</td><td>Has your pug encountered it calmly beforehand?</td></tr>
+<tr><td>Towel and waste bags</td><td>Finish the return and cleanup routine.</td><td>Are they ready at the entrance?</td></tr>
+</tbody></table></div>
+<p>If harness fastening is slowing departures, our <a href="/qtpawz-pug-harness-review.html">look at pug harness sizing and fit</a> provides a separate equipment comparison. Keep product selection separate from the training result: a different harness does not establish a toilet cue or teach your pug where to go.</p>
+<p>Boots also belong in a separate practice session if they are new to your dog. Do not make an urgent toilet opportunity the first time you introduce unfamiliar clothing, new footwear and a different destination together. Decide which item you want to practice, and rehearse that item without asking for the entire outdoor routine at once.</p>
+<h2>What should you change when your pug still refuses?</h2>
+<p>Change the earliest point where the routine stalls. Use what you observed rather than labeling the whole outing a failure. This troubleshooting table offers possible next tests; it does not diagnose why an individual dog refuses or assign a guaranteed fix.</p>
+<div class="pa-table-wrap"><table><thead><tr><th>Observed obstacle</th><th>Next setup to try</th><th>Avoid combining it with</th></tr></thead><tbody>
+<tr><td>Stops at the doorway</td><td>Practice a calm departure during an easy-weather outing.</td><td>A new coat and a new toilet location.</td></tr>
+<tr><td>Reaches the spot but avoids the surface</td><td>Offer an exposed patch of the familiar surface.</td><td>A long search through unfamiliar ground.</td></tr>
+<tr><td>Objects while being dressed</td><td>Practice the garment separately indoors.</td><td>An urgent request to toilet immediately.</td></tr>
+<tr><td>Returns without toileting</td><td>Supervise the indoor reset and watch for another opportunity.</td><td>Assuming the dog must have gone unnoticed.</td></tr>
+<tr><td>The outdoor route is unavailable</td><td>Use an established accessible alternative, if available.</td><td>Forcing the blocked route to complete a plan.</td></tr>
+</tbody></table></div>
+<p>If you already use a designated toilet tray, give that location an explicit role in the household plan. Decide where it belongs, how it will be cleaned and which surface you intend to offer outside later. Avoid treating an emergency change of location as proof that your pug has learned a new rule. Keep the next outdoor opportunity recognizable.</p>
+<p>For the return-without-going problem, Dogs Trust advises close supervision indoors because another opportunity may be needed soon. It also recommends introducing a chosen toilet phrase as the dog begins toileting, then rewarding after completion. A phrase is something to teach through association; repeating it louder at the doorstep is not a substitute for that teaching.</p>
+<h2>How can you tell whether the new routine helps?</h2>
+<p>Keep a simple outing log and compare similar situations. Record what you observed directly, including outings where no toileting happened. A log can help choose the next setup change; it cannot prove that a coat, shelter or surface caused an improvement.</p>
+<p>Suggested fields are weather, destination, surface offered, where the trip stalled, whether toileting happened and where you gave the reward. Add a note about anything unusual, such as a blocked path or a different person taking the dog. Use plain entries rather than a score that suggests precision the observations cannot support.</p>
+<p>Separate your own preparation from your pug's behavior. “Lead not ready” and “would not step onto snow” are different entries with different next actions. When a setup works, repeat the usable parts before shopping for more equipment. If it does not, change a specific part and make the next record equally concrete.</p>
+<h2>What does this guide's evidence actually support?</h2>
+<p>This is a curation and planning resource, not a pug weather experiment. The training basis is Dogs Trust's house-training guidance. The snow setup comes from a public owner discussion, while the linked trainer video illustrates general house-training concepts. These sources serve different purposes and should not be treated as interchangeable evidence.</p>
+<p>No controlled pug-specific comparison of these weather routines was established for this guide. There is no measured success percentage, recommended exposure duration or temperature calculator behind the planner. Its output follows your selected obstacle and space, using editorial setup suggestions. The tables are checklists, not research datasets.</p>
+<p>The older trainer lesson remains useful for illustrating the same basic house-training sequence described by the current Dogs Trust guidance. It is labeled with its original year so that a demonstration is not mistaken for new weather research. Owner anecdotes supply ideas to test, not promises about your pug.</p>
+<h2>Questions about pug potty trips in bad weather</h2>
+<div class="pa-faq">
+<details><summary>Should I wait until we are indoors to give the reward?</summary><p>Keep it with you and reward completed toileting at the outdoor location. Dogs Trust recommends rewarding as soon as the dog has toileted. For this routine, put the reward in an accessible pocket before leaving so the return to the house does not become the moment you first reach for it.</p></details>
+<details><summary>Does my pug need a raincoat before we start?</summary><p>The planner does not require one. Start by identifying the obstacle and preparing the route. If you want to use a coat, practice dressing separately and use a garment your pug accepts. A clothing purchase is an equipment decision, not evidence that the toilet-training routine will work.</p></details>
+<details><summary>Should I clear the entire yard after snow?</summary><p>The owner reports describe clearing paths and patches rather than requiring a fully cleared yard. Try an accessible route to your familiar toilet spot if that suits your space. Those reports do not establish a required area or dimensions, so choose the layout according to the route you actually use.</p></details>
+<details><summary>What if my pug comes back without going?</summary><p>Return calmly and supervise the indoor reset. Dogs Trust recommends keeping a close eye on a dog that has not toileted because another trip may be needed soon. Record that nothing happened rather than assuming the outing counted as a completed toilet break. Offer the next opportunity according to what you observe.</p></details>
+<details><summary>Can this planner tell me how long to stay outside?</summary><p>No. It chooses preparation and training tasks from your weather, space and observed obstacle. It does not assess an individual dog's tolerance or calculate exposure time. If there is no usable route, its priority is an accessible alternative rather than completing an outdoor trip at any cost.</p></details>
+<details><summary>Will my pug eventually like snow?</summary><p>The public owner discussion includes different reactions to snow; it cannot predict your dog's response. Aim for a workable toilet routine rather than a love of winter. Record whether your pug reaches and uses the selected surface, and adjust the setup according to that observation.</p></details>
+</div>
+<div class="pa-eeat"><p><strong>About this guide:</strong> Written by Amy Tran for Pug Guide. Amy is not a veterinarian. This guide draws on published house-training guidance, a trainer's demonstration and clearly labeled owner reports. We did not receive free products or payment from any brand, and the links in this article are not affiliate links. Read how we research and check our guides in our <a href="/editorial-policy.html">editorial policy</a>.</p>
+<p><strong>AI disclosure:</strong> This article was drafted with the help of AI and then fact-checked against the linked sources before publication.</p></div>
+</article>
+  </div>
+  <aside class="sidebar" aria-label="Sidebar">
+  <section class="pc-cta">
+  <p class="pc-tag">Birthday party kit</p>
+  <h3>Plan the party</h3>
+  <p>Fill in the planner and print the kit: run of show, guest list, party-day checklist and an item list for the shopping run.</p>
+  <a class="pc-btn" href="/pug-birthday-party-planner.html" data-pc-from="sidebar"><span>Plan the party</span></a>
+</section>
+  <div class="sidebar-links">
+<h4>More pug guides</h4>
+<ul><li><a href="/pug-clothes-size-guide.html">Pug Clothes Size Guide: How to Measure a Pug for a Fit</a></li><li><a href="/adult-pug-weight.html">Adult Pug Weight: Owner Reports vs the AKC Standard (2026)</a></li><li><a href="/fluff-trough-review-for-pugs.html">Fluff Trough Review for Pugs (2026): vs Leash Boss Flat Face Feeder</a></li></ul>
+<h4>Quick links</h4>
+<ul><li><a href="/blog.html">Latest articles</a></li><li><a href="/care.html">Pug care guide</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul>
+</div>
+</aside>
+</div>
+<script id="pug-weather-planner">(function(){'use strict';
+function plan(weather,space,obstacle,surface){
+ const steps=[];
+ if(space==='none')return ['Use an established accessible alternative if available; do not force an unavailable outdoor route.','Prepare the familiar designated toilet area and supervise.','Plan the next outdoor opportunity when a usable route is available.'];
+ steps.push(weather==='snow'?'Prepare a cleared approach and exposed toilet patch before bringing your pug out.':weather==='rain'?'Choose a familiar spot with a sheltered approach where available.':'Prepare the shortest familiar route and the clothing your pug already accepts.');
+ if(space==='shared')steps.push('Use the shared area within its normal access arrangements; do not install a shelter or move other people’s property.');
+ const s={grass:'Offer the familiar grass patch.',paving:'Offer the familiar paving area rather than switching surfaces during this trial.',tray:'Use the designated toilet tray in its established location; plan any outdoor transition separately.'};steps.push(s[surface]);
+ const o={door:'Practice an easy, voluntary doorway departure separately from an urgent toilet trip.',surface:'Change the surface setup first; offer familiar exposed ground rather than a new destination.',gear:'Practice dressing indoors separately; do not add unfamiliar gear during an urgent trip.',return:'Return calmly, supervise indoors and offer the next opportunity when your pug indicates a need.'};steps.push(o[obstacle]);
+ steps.push('Accompany your pug, reward completed toileting at the spot, and record what happened.');return steps;}
+function run(){const out=document.getElementById('pw-result');out.textContent='';const steps=plan(...['weather','space','obstacle','surface'].map(x=>document.getElementById('pw-'+x).value));const list=document.createElement('ol');steps.forEach(t=>{const li=document.createElement('li');li.textContent=t;list.appendChild(li);});out.appendChild(list);}
+document.getElementById('pw-build').addEventListener('click',run);document.getElementById('pw-print').addEventListener('click',function(){window.print();});run();
+if(typeof module!=='undefined')module.exports=plan;
+})();</script>
+
+
+<footer class="sc-footer pc-foot">
+  <div class="pc-foot-in">
+    <p class="pc-foot-word" aria-hidden="true">Pug Guide</p>
+    <div class="pc-foot-cols">
+      <div><h2>The pug club</h2><p>Pug Guide is a small, practical site for people who live with a pug: grooming, gear, daily care and a printable party planner for the next gotcha day. Guides are drafted with AI assistance and checked against the linked sources. Set in Lilita One and Quicksand.</p></div>
+      <div><h2>Plan &amp; read</h2><ul><li><a href="/pug-birthday-party-planner.html">Birthday party planner</a></li><li><a href="/blog.html">All guides</a></li><li><a href="/care.html">Care</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul></div>
+      <div><h2>The rules</h2><ul><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/editorial-policy.html">Editorial policy</a></li><li><a href="/disclosure.html">Disclosure</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
+    </div>
+    <p class="pc-foot-copy"><span>&copy; 2026 Pug Guide</span><span>pugs-care.github.io</span></p>
+  </div>
+  <script id="pc-events">window.dataLayer=window.dataLayer||[];function pcTrack(n,p){var e='pc_party_'+n;window.dataLayer.push(Object.assign({event:e,site:'pugs-care'},p||{}));if(window.gtag)window.gtag('event',e,p||{});}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-pc-from]');if(a)pcTrack('cta_click',{from:a.getAttribute('data-pc-from')});});</script>
+</footer>
+</body>
+</html>
